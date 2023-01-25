@@ -1,0 +1,188 @@
+:root {
+    --background: #ffffff;
+    --text-primary: #000;
+    --text-secondary: rgb(230, 4, 126);
+    --accent: rgb(230, 4, 126);
+    --border: #333;
+    --form-bg: #fff;
+}
+
+[data-theme="dark"] {
+    --background: #000;
+    --text-primary: #fff;
+    --text-secondary: rgb(230, 4, 126);
+    --accent: rgb(230, 4, 126);
+    --border: #808080;
+    --form-bg: #191919;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+}
+
+.login-app a {
+    color: var(--text-secondary);
+}
+
+.login-app {
+  /* background-color: var(--background); */
+  color: var(--text-primary);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+  transition: all 0.5s;
+
+}
+
+.login h1 {
+    text-align: center;
+    margin: -6rem 0 2rem;
+    font-size: 48px;
+}
+
+.login-app h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.login-app .theme-toggle i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.login-app .theme-toggle {
+    text-align: center;
+}
+
+.login-app .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 12px var(--border);
+    border-radius: 8px;
+    background-color: var(--form-bg);
+}
+
+.login-app .top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-app .top i {
+    font-size: 1rem;
+}
+
+.login-app .divider {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--text-primary);
+    line-height: 0.1rem;
+    margin: 2rem 0;
+}
+
+.login-app span {
+    padding: 0 10px;
+    background-color: var(--form-bg);
+}
+
+.login-app.form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-app .form-login > label {
+    margin: 8px 0;
+    font-weight: 600;
+    color: black;
+}
+
+.login-app .form-login .input-form {
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--background);
+    color: var(--text-primary);
+    height: 3rem;
+}
+
+.login-app .form-login .input-email {
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--background);
+    color: var(--text-primary);
+    width: 100%;
+}
+
+.login-app .remember {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.login-app .form .input-form[type="checkbox"]:checked {
+    margin: 0;
+    padding: 0;
+}
+
+.login-app .remember p {
+    padding-left: 8px;
+}
+
+.login-app .form-login button {
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    color: #fff;
+    margin: 16px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-app .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.8rem;
+}
+/* 
+.create {
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+} */
+
+.login-app .form-login .input-form {
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--background);
+    color: var(--text-primary);
+    height: 3rem;
+    width: 100%;
+}
+@media screen and (max-width: 478px) {
+    .login-app .login {
+        width: 95%;
+    }
+}

@@ -1,0 +1,8 @@
+.HeaderIndex{
+  background-color: white(240, 134, 48);
+  display: flex;
+  justify-content: center;
+  display: -moz-stack;
+  width: 100%;
+  height: 10rem;
+}

@@ -1,0 +1,10 @@
+.Recipe-Ingredient td {
+    padding: 5px;
+    width: 25%;
+}
+
+@media (max-width: 767px) {
+    .css-1basyhb-MuiTableCell-root.MuiTableCell-body {
+        font-size: 16px;
+    }
+}

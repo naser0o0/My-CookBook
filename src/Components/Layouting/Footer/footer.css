@@ -1,0 +1,151 @@
+:root {
+    /* --main-color: #ffdf2b; */
+    --main-color: rgb(230, 4, 126);
+    --second-color: #b2b8ba;
+    --background-color: #212222;
+}
+
+* {
+    box-sizing: border-box;
+}
+footer {
+    background-color: var(--background-color);
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.overview-container,
+.logo-container {
+    padding: 30px;
+    width: 40%;
+}
+
+.overview-container h2 {
+    color: var(--main-color);
+}
+.container p {
+    color: white;
+    padding-top: 10px;
+}
+
+.app-logo-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.app-logo-container img {
+    width: 160px;
+    background-color: rgb(245 245 242);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+}
+.social-links a:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.container label {
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.info-container a {
+    padding-right: 30px;
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+
+.info-container a:hover {
+    color: var(--main-color);
+}
+
+.icon {
+    padding: 20px;
+    background-color: var(--main-color);
+    font-size: 30px;
+}
+
+.copyright {
+    text-align: center;
+    color: rgb(161, 161, 161);
+    font-size: small;
+    padding-bottom: 10px;
+}
+.copyright:hover {
+    color: white;
+}
+/***Responsive***/
+@media (max-width: 1065px) {
+    .overview-container {
+        width: 50%;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .overview-container,
+    .logo-container {
+        width: 100%;
+    }
+    .overview-container {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+    .app-logo-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-container a {
+        padding: 5px 15px;
+    }
+}

@@ -1,0 +1,144 @@
+.nav-link {
+    display: flex;
+    justify-content: center;
+    padding: 2px 32px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    align-items: center;
+}
+
+
+.nav-link .nav-btn {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: solid white ;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+
+.navigation-content {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    background-color: rgb(245 245 242);
+    padding: 2rem;
+    /* height: 50rem; */
+}
+
+.navigation-content a {
+    text-decoration: none;
+}
+
+
+
+.MuiPaper-elevation1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  
+  .MuiPaper-elevation1:hover {
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+    -webkit-transition: .3s ease-in-out;
+     transition: .4s ease-in-out;
+  
+  }
+
+  .MuiCardMedia-img{
+    border: solid rgb(255, 255, 255);
+    border-radius: 8px;
+  }
+  
+
+.navigation-content .MuiCardMedia-img:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+.navigation-content p:hover {
+    color: var(--main-color);
+}
+
+.navigation-content .Recipe-Description p:hover {
+    color: black;
+}
+
+.navigation-content button svg.MuiSvgIcon-root {
+    color: var(--main-color);
+}
+
+.navigation-content button svg.MuiSvgIcon-root:hover {
+    color: white;
+}
+
+.navigation-content button.MuiButtonBase-root:hover {
+    background-color: rgb(244, 186, 216);
+}
+
+.nav-btn:hover {
+    background-color: rgb(244, 216, 235);
+    border-bottom: solid rgb(230, 4, 126);
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+    .nav-link {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        /* position: absolute; */
+        display: block;
+        list-style: none;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+
+
+    .nav-btn {
+        color: white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5 ease;
+        /* border-bottom:solid white; */
+    }
+
+    .signup {
+        /* border:none; */
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: #e6047e;
+        border: none;
+        outline: none;
+        top: 55px;
+        right: 25px;
+    }
+}

@@ -1,0 +1,46 @@
+.content-img-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    /* margin: 1rem; */
+    gap: 2rem;
+    width: 100%;
+    margin: 2rem 0;
+
+}
+
+.img-card{
+    background-color: white;
+    border: solid rgb(216, 215, 215);
+    padding: 10px;
+}
+
+
+.img-card:hover {
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+    -webkit-transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
+  
+  }
+
+  .banner-content {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: solid rgb(236, 236, 236);
+    background-color: white;
+    /* border: solid red; */
+
+  }
+
+  .banner-img {
+    width: 100%;
+    /* border: solid blue; */
+  }
+
+  .banner-img img {
+    width: 100%;
+  }

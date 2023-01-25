@@ -1,0 +1,49 @@
+
+
+
+.MuiPaper-elevation1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.MuiCardMedia-img{
+  border: solid rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.MuiPaper-elevation1:hover {
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
+  -webkit-transition: .3s ease-in-out;
+transition: .4s ease-in-out;
+
+}
+
+
+
+.recipe-card:hover {
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+    -webkit-transition: .3s ease-in-out;
+	transition: .4s ease-in-out;
+  
+  }
+
+
+  /* image card style */
+.navigation-content .MuiCardMedia-img:hover {
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
+  -webkit-transition: .3s ease-in-out;
+transition: .4s ease-in-out;
+
+}
+	
